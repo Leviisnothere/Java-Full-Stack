@@ -47,11 +47,9 @@ public class StudentServiceImpl implements StudentService {
         Student student = studentRepository.findById(studentId).orElseThrow(
                 () -> new ResourceNotFoundException("Student is not exists with given id: " + studentId)
         );
-
         student.setFirstName(updatedStudent.getFirstName());
         student.setLastName(updatedStudent.getFirstName());
         student.setEmail(updatedStudent.getEmail());
-
         Student updatedStudentObj = studentRepository.save(student);
         return StudentMapper.mapToStudentDto(updatedStudentObj);
     }
@@ -61,7 +59,6 @@ public class StudentServiceImpl implements StudentService {
         Student student = studentRepository.findById(studentId).orElseThrow(
                 () -> new ResourceNotFoundException("Student is not exists with given id: " + studentId)
         );
-
         studentRepository.deleteById(studentId);
     }
 
