@@ -5,7 +5,7 @@ FROM eclipse-temurin:21
 WORKDIR /app
 
 # Copy the application JAR file to the container
-COPY target/backend-0.0.1-SNAPSHOT.jar /app/springboot-example.jar
+COPY target/backend-0.0.1-SNAPSHOT.jar /app/springboot-app.jar
 EXPOSE 8080
 # Specify the command to run the application
 CMD ["java", "-jar", "springboot-app.jar"]
