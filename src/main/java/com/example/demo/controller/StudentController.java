@@ -13,7 +13,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://3.137.147.107:80")
 @RequestMapping("/api/students")
 public class StudentController {
 
