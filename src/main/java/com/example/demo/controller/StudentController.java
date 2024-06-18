@@ -2,7 +2,6 @@ package com.example.demo.controller;
 
 
 import com.example.demo.dto.StudentDto;
-import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,7 +12,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://3.137.147.107:80")
+@CrossOrigin(origins = "http://3.137.147.107")
 @RequestMapping("/api/students")
 public class StudentController {
 
